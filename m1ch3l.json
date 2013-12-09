@@ -1,0 +1,38 @@
+{
+    "AutoRejoinOnKick": true,
+    "Logs": {
+        "Enable": true,
+        "Directory": "./logs/"
+    },
+    "Servers": {
+        "freenode": {
+            "Name": "freenode",
+            "Host": "irc.freenode.net:6667",
+            "FloodControl": true,
+            "Nickname": "docker-m1ch3l",
+            "Realname": "docker-m1ch3l",
+            "Username": "docker-m1ch3l",
+            "Password": "",
+            "Channels": {
+                "##sbrk": {
+                    "Name": "##sbrk",
+                    "Password": "",
+                    "Master": true
+                }
+            }
+        }
+    },
+    "Broadcast": {
+        "Targets": {
+            "freenode": [
+                "##sbrk"
+            ]
+        }
+    },
+    "Scripts": {
+        "AdminScripts": "scripts/admin",
+        "PublicScripts": "scripts/public",
+        "PrivateScripts": "scripts/private",
+        "LocalPort": "3112"
+    }
+}
